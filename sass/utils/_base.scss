@@ -1,0 +1,42 @@
+body{
+    font-size: 14px;
+    font-family:'Roboto', sans-serif; 
+    font-weight:400;
+    color: var(--paragraph-text-color);
+    background-color: var(--button-text-color);
+   
+ }
+ body ul{
+    list-style-type: none;    ;
+ }
+ img{
+    width: 100%;
+    height: auto;
+ }
+ .link{
+    text-decoration: none;
+    color: inherit;
+ }
+ 
+ p{
+    margin: 0;
+ }
+   
+ .container{
+    width: 480px;
+    padding:0 15px;
+    margin: 0 auto;
+    text-align: center;
+ }
+ .section{
+    padding: 60px 0;
+  
+ }      
+ .list{
+     
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ 
+ }
+ 
