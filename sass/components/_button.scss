@@ -1,0 +1,22 @@
+.button-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    background-color: #fff;
+    &:hover, &:focus{
+        fill: var(--accent-color);
+    }
+    &.is-open .button__icon-cross{
+        display: block;
+    }
+    &.is-open .button__icon-menu{
+        display: none;
+    }
+
+}
+
+.button__icon-cross{
+    display: none;
+}

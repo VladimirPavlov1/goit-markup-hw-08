@@ -20,36 +20,45 @@
         <div class="container">
             <div class="header__inner">
                 <a href="./" class="logo">
+               
                 <span class="logo__particle">Web</span>Studio</a>
             
-                <nav>
-                    <ul class="site-nav list">
-                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
-                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                        <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <address class="contact-address">
-                    <ul class="contact-address__list">
-                        <li class="contact-address__item">
-                            <a href="mailto:info@devstudio.com" class="contact-address__link">
+                <div class="header__inner-menu--mobile">
+                    <nav>
+                        <ul class="site-nav list">
+                            <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+                            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <address class="contact-address">
+                        <ul class="contact-address__list list">
+                            <li class="contact-address__item">
+                                <a href="mailto:info@devstudio.com" class="contact-address__link">
+                                    <svg class="icon-envelope" viewBox="0 0 32 32" width="18px" height="18px">
+                                        <use xmlns href="./images/icons.svg#icon-envelope">
+    
+                                        </use>
+                                    </svg>
+                            info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="contact-address__item"><a href="tel:+380961111111" class="contact-address__link">
                                 <svg class="icon-envelope" viewBox="0 0 32 32" width="18px" height="18px">
-                                    <use xmlns href="./images/icons.svg#icon-envelope">
-
+                                    <use xmlns href="./images/icons.svg#icon-smartphone">
+                                
                                     </use>
                                 </svg>
-                        info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="contact-address__item"><a href="tel:+380961111111" class="contact-address__link">
-                            <svg class="icon-envelope" viewBox="0 0 32 32" width="18px" height="18px">
-                                <use xmlns href="./images/icons.svg#icon-smartphone">
-                            
-                                </use>
-                            </svg>
-                            +38 096 111 11 11</a></li>
-                    </ul>
-                </address>
+                                +38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <button type="button" class="button-menu" data-menu-button>
+                    <svg  viewBox="0 0 32 32" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="button__icon-menu" xmlns href="./images/icons.svg#icon-menu_24px"></use>
+                        <use class="button__icon-cross" xmlns href="./images/icons.svg#icon-close_24px">
+                    </svg>
+                </button>
             </div>
             
 
@@ -76,20 +85,30 @@
                                    
                 <ul class="benefits__list list">
                     <li class="benefits__icon benefits__icon-antenna">
-                        <h3 class="benefits__title">Внимание к деталям</h3>
-                        <p class="benefits__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <div class="benefits-inner">
+                            <h3 class="benefits-inner__title">Внимание к деталям</h3>
+                            <p class="benefits-inner__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        </div>
                     </li>
                     <li class="benefits__icon benefits__icon-clock">
-                        <h3 class="benefits__title">Пунктуальность</h3>
-                        <p class="benefits__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <div class="benefits-inner">
+                            <h3 class="benefits-inner__title">Пунктуальность</h3>
+                        <p class="benefits-inner__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        </div>
                     </li>
                     <li class="benefits__icon benefits__icon-diagram">
-                        <h3 class="benefits__title">Планирование</h3>
-                        <p class="benefits__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <div class="benefits-inner">
+                            <h3 class="benefits-inner__title">Планирование</h3>
+                            <p class="benefits-inner__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        </div>
+                        
                     </li>
                     <li class="benefits__icon benefits__icon-astronaut">
-                        <h3 class="benefits__title">Современные технологии</h3>
-                        <p class="benefits__text last">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <div class="benefits-inner">
+                            <h3 class="benefits-inner__title">Современные технологии</h3>
+                            <p class="benefits-inner__text last">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        </div>
+                        
                     </li>
                 </ul>
                                    
@@ -98,7 +117,7 @@
             </div>
             
         </section>
-        <section class="work-area section">
+        <section class="work-area work-area-desktop section">
             <div class="container">
                 <h2 class="section-title">
                     Чем мы занимаемся
@@ -476,6 +495,7 @@
         
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
     
 </body>
