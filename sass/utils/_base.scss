@@ -39,6 +39,10 @@ body{
 }
  .section{
     padding: 60px 0;
+    @media (min-width:1200px) {
+       padding: 90px 0;
+       
+    }
   
  }      
  .list{

@@ -6,6 +6,9 @@
     line-height: 1.2;
     letter-spacing: .03em; 
     text-decoration: none;
+    @media (min-width:1200px) {
+        margin-right: 93px;
+    }
     &--light{
         color: var(--button-text-color);
         display: block;
