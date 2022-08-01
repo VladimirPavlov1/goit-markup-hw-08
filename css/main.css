@@ -109,24 +109,51 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header__inner-menu--mobile {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background-color: #fff;
+@media (min-width: 768px) {
+  .header__inner-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__inner-menu--mobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #fff;
+  }
+  .is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__inner-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .logo {
@@ -149,8 +176,18 @@ p {
   color: var(--accent-color);
 }
 
-.site-nav {
-  display: block;
+@media (max-width: 767px) {
+  .site-nav {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .site-nav__item {
@@ -158,13 +195,28 @@ p {
   text-align: start;
 }
 
+@media (max-width: 767px) {
+  .site-nav__item {
+    margin-bottom: 32px;
+  }
+  .site-nav__item:first-child {
+    margin-top: 48px;
+  }
+  .site-nav__item:last-child {
+    margin-bottom: 306px;
+  }
+}
+
+@media (min-width: 767px) {
+  .site-nav__item {
+    margin-right: 50px;
+  }
+}
+
 .site-nav__link {
   display: block;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 0;
   position: relative;
   margin: 0;
   color: var(--title-text-color);
@@ -182,12 +234,39 @@ p {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (max-width: 767px) {
+  .site-nav__link {
+    font-size: 40px;
+    line-height: 1,17;
+  }
+}
+
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
 .site-nav__link--current {
   color: var(--accent-color);
+}
+
+@media (min-width: 767px) {
+  .site-nav__link {
+    padding: 32px 0;
+  }
+}
+
+@media (min-width: 767px) {
+  .site-nav__link--current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+  }
 }
 
 .contact-address {
@@ -203,6 +282,18 @@ p {
   text-align: start;
 }
 
+@media (max-width: 479px) {
+  .contact-address__item {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 480px) {
+  .contact-address__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .contact-address__link {
   color: var(--paragraph-text-color);
   list-style: none;
@@ -213,12 +304,27 @@ p {
   font-style: normal;
   text-decoration: none;
   letter-spacing: .02em;
+  padding: 16px 0;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 479px) {
+  .contact-address__link--tel {
+    font-size: 34px;
+    line-height: 1.17;
+  }
+}
+
+@media (max-width: 479px) {
+  .contact-address__link--mail {
+    font-size: 24px;
+    line-height: 1,17;
+  }
 }
 
 .contact-address__link:hover, .contact-address__link:focus, .contact-address__link:active {
@@ -480,6 +586,12 @@ p {
   border: none;
   padding: 0;
   background-color: #fff;
+}
+
+@media (min-width: 767px) {
+  .button-menu {
+    display: none;
+  }
 }
 
 .button-menu:hover, .button-menu:focus {

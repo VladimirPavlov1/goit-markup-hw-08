@@ -1,4 +1,7 @@
 .button-menu{
+    @media (min-width:767px) {
+        display: none;
+    }
     display: block;
     width: 40px;
     height: 40px;
