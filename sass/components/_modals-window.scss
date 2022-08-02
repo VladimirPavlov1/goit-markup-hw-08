@@ -10,20 +10,28 @@
     transition-property: opacity, visibility;
     transition-duration: 1000ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    padding: 40px 15px;
  }
  
  .modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-   
-    min-width: 528px;
-    min-height: 581px;
-    
+    width: 100%;  
     background-color:var(--button-text-color);
     box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    @media (min-width:480px) and (max-width:1199px){
+      width:450px;
+      margin-right: auto;
+      margin-left: auto;
+   }
+    @media (min-width:1200px) {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 528px;
+     height: 581px;
+    }
+    
  }
  .modal__button{
     
@@ -67,6 +75,7 @@
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+    padding: 0 40px;
  }
  .form{
     margin: 0 40px 40px 40px;
@@ -125,8 +134,8 @@
  .form-field-coment__textarea{
     display: block;
     resize: none;
-    width: 448px;
-    height: 120px;
+    width: 100%;
+    min-height: 120px;
     background: #FFFFFF;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -155,6 +164,7 @@
  }
  .form-field-police__label{
     display: contents;
+    font-size: 12px;
  }
  
  .form-field-police__input{
@@ -168,6 +178,7 @@
     clip-path: inset(100%);
     clip: rect(0000);
     overflow: hidden;
+    
  
  }
  
@@ -178,6 +189,7 @@
     border: 1px solid #000000;
     border-radius: 3px;
     margin-right: 8px;
+    font-size: 12px;
     .form-field-police__input:checked:focus+ &{
     background-color: var(--accent-color);
     background-image: url('../images/icon-check1.svg');
@@ -193,6 +205,7 @@
  .form-field-police__link{
     color: var(--accent-color);
     padding-left: 8px;
+    font-size: 12px;
  }
  .form-field-button{
     display: flex;
@@ -201,6 +214,7 @@
     &__button{
     width: 200px;
     height: 50px;
+    margin-bottom: 40px;
     color: var(--button-text-color);
     background-color: var(--accent-color);
     border-radius: 4px;

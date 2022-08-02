@@ -52,3 +52,27 @@
     .social-links__link:focus &{fill: var(--button-text-color);}
     
  }
+ .social-text-links{
+    display: flex;
+    padding: 48px;
+    @media (min-width:768px) {
+       display: none;
+    }
+ }
+ .social-text-links__item{
+    margin-right: 20px;
+ }
+ .social-text-links__link{
+  
+   
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.22;
+   
+   letter-spacing: 0.02em;
+   
+   color: var(--accent-color);
+   
+ }
