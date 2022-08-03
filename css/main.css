@@ -27,8 +27,11 @@ body ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .link {
@@ -423,15 +426,37 @@ p {
 
 .overlay {
   background-color: var(--background-hang);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(47, 48, 58, 0.4))), url("../images/backfon.jpg");
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url("../images/backfon.jpg");
-  max-width: 1600px;
-  max-height: 600px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(47, 48, 58, 0.4))), url("../images/header@1.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url("../images/header@1.jpg");
   margin-left: auto;
   margin-right: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background-image: url("../images/header@2.jpg");
+  }
+}
+
+@media (min-width: 480px) {
+  .overlay {
+    background-image: url("../images/header@2.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2.0416666666666665), (min-resolution: 196dpi), (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background-image: url("../images/header@3.jpg");
+  }
+}
+
+@media (min-width: 900px) {
+  .overlay {
+    background-image: url("../images/backfon.jpg");
+  }
 }
 
 .hero {
@@ -741,7 +766,7 @@ p {
 
 @media (max-width: 767px) {
   .team__item:not(:last-child) {
-    margin-right: 30px;
+    margin: 15px;
   }
 }
 
