@@ -36,6 +36,9 @@
    text-align:center;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+   @media(min-width:768px){
+      text-align: start;
+   }
 }
 .benefits-inner__text{
    text-align: start;

@@ -7,6 +7,10 @@
     letter-spacing: .03em;
     margin: 0 auto 30px;
     text-align: center;
+    @media(min-width:1200px){
+      font-size: 36px;
+      margin: 0 auto 50px;
+    }
   }
   .title{
     font-family:'Roboto', sans-serif; 

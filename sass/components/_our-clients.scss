@@ -9,11 +9,22 @@
     color: #212121;
     margin-top: 0;
     margin-bottom: 30px;
+    @media(min-width:1200px){
+       font-size: 36px;
+       margin-bottom: 50px;
+    }
  
  }
  .our-clients__item{
      display: block;
      margin: 15px;
+     &:nth-child(n+4){
+        @media (min-width:480px){
+         margin-bottom: 0;}
+     }
+     @media (min-width:768px){
+        margin-bottom: 0;
+     }
  }
  .our-clients__list{
     display: flex;
@@ -24,6 +35,12 @@
     align-items: center;
     padding:0;
     margin-bottom: 30px;
+    @media(min-width:480px){
+       margin-bottom: 15px;
+    }
+    @media(min-width:768px){
+       margin-bottom: 0;
+    }
  }
  
  .our-clients__link{
