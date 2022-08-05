@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="./" class="logo">
+                <a href="./" class="logo logo--black">
                
                 <span class="logo__particle">Web</span>Studio</a>
                 
@@ -53,7 +53,7 @@
                            
                         </ul>
                     </address>
-                    <ul class="social-text-links">
+                    <ul class="social-text-links list">
                         <li class="social-text-links__item"><a href="#" class="social-text-links__link">Instagram</a></li>
                         <li class="social-text-links__item"><a href="#" class="social-text-links__link">Twitter</a></li>
                         <li class="social-text-links__item"><a href="#" class="social-text-links__link">Facebook</a></li>
@@ -61,10 +61,10 @@
                     </ul>
                 </div>
                 <button type="button" class="button-menu" data-menu-button>
-                    <svg  viewBox="0 0 32 32" width="40px" height="40px" aria-label="Переключатель мобильного меню"
+                    <svg  viewBox="0 0 32 32" aria-label="Переключатель мобильного меню"
                     aria-controls="menu--mobile">
                         <use class="button__icon-menu" xmlns href="./images/icons.svg#icon-menu_24px"></use>
-                        <use class="button__icon-cross" xmlns href="./images/icons.svg#icon-close_24px">
+                        <use class="button__icon-cross" xmlns href="./images/icons.svg#icon-close_24px" width="20px" height="20px">
                     </svg>
                 </button>
             </div>
@@ -86,7 +86,15 @@
             <ul class="work-list list">
                 <li class="work-list__item">
                     <div class="work-list__thumb">
-                        <img  srcset="./images/project1.jpg 1x, ./images/project1@2x.jpg 2x" src="./images/project1.jpg" alt="Веб-сайт Технокряк photo" width="370">
+                        <img
+                            srcset="./images/project1@mobile.jpg 450w,
+                             ./images/project1@tablet.jpg 354w, 
+                             ./images/project1@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project1.jpg"
+                            alt="Веб-сайт Технокряк photo"
+                        />
+                       
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                    
@@ -99,7 +107,15 @@
                 </li>
                 <li class="work-list__item">
                     <div class="work-list__thumb">
-                        <img srcset="./images/project2.jpg 1x, ./images/project2@2x.jpg 2x" src="./images/project2.jpg" alt="Дизайн проэкт Постер New Orlean vs Golden Star" width="370">
+                        <img
+                        srcset="./images/project2@mobile.jpg 450w,
+                            ./images/project2@tablet.jpg 354w, 
+                            ./images/project2@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                        src="./images/project2.jpg"
+                        alt="Дизайн проэкт Постер New Orlean vs Golden Star"
+                        />
+                       
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -113,7 +129,15 @@
                 <li class="work-list__item">
                     
                     <div class="work-list__thumb">
-                        <img srcset="./images/project3.jpg 1x, ./images/project3@2x.jpg 2x" src="./images/project3.jpg" alt=">Приложение Ресторан Seafood photo" width="370">
+                        <img
+                            srcset="./images/project3@mobile.jpg 450w,
+                            ./images/project3@tablet.jpg 354w, 
+                            ./images/project3@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project3.jpg"
+                            alt=">Приложение Ресторан Seafood photo"
+                        />
+                        
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -126,7 +150,15 @@
                 </li>
                 <li class="work-list__item">
                     <div class="work-list__thumb">
-                        <img srcset="./images/project4.jpg 1x, ./images/project4@2x.jpg 2x" src="./images/project4.jpg" alt="Маркетинг-проэкт Проект Prime photo" width="370">
+                        <img
+                            srcset="./images/project4@mobile.jpg 450w,
+                            ./images/project4@tablet.jpg 354w, 
+                            ./images/project4@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project4.jpg"
+                            alt="Маркетинг-проэкт Проект Prime photo"
+                        />
+                        
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -139,7 +171,15 @@
                 </li>
                 <li class="work-list__item">
                     <div class="work-list__thumb">
-                        <img srcset="./images/project5.jpg 1x, ./images/project5@2x.jpg 2x" src="./images/project5.jpg" alt="Приложение Проект Boxes photo" width="370">
+                        <img
+                            srcset="./images/project5@mobile.jpg 450w,
+                            ./images/project5@tablet.jpg 354w, 
+                            ./images/project5@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project5.jpg"
+                            alt="Приложение Проект Boxes photo"
+                        />
+                        
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -152,7 +192,15 @@
                 </li>
                 <li class="work-list__item">
                     <div class="work-list__thumb">
-                        <img srcset="./images/project6.jpg 1x, ./images/project6@2x.jpg 2x" src="./images/project6.jpg" alt="Веб-сайт Inspiration has no Borders" width="370">
+                        <img
+                            srcset="./images/project6@mobile.jpg 450w,
+                            ./images/project6@tablet.jpg 354w, 
+                            ./images/project6@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project6.jpg"
+                            alt="Веб-сайт Inspiration has no Borders"
+                        />
+                        
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -166,7 +214,15 @@
                 <li class="work-list__item">
                     
                     <div class="work-list__thumb">
-                        <img srcset="./images/project7.jpg 1x, ./images/project7@2x.jpg 2x" src="./images/project7.jpg" alt="Дизайн проэкт Издание Limited Edition photo" width="370">
+                        <img
+                            srcset="./images/project7@mobile.jpg 450w,
+                            ./images/project7@tablet.jpg 354w, 
+                            ./images/project7@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project7.jpg"
+                            alt="Дизайн проэкт Издание Limited Edition photo"
+                        />
+                        
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -180,7 +236,15 @@
                 <li class="work-list__item">
                     
                     <div class="work-list__thumb">
-                        <img srcset="./images/project8.jpg 1x, ./images/project8@2x.jpg 2x" src="./images/project8.jpg" alt="Маркетинг проэкт Проект LAB" width="370">
+                        <img
+                            srcset="./images/project8@mobile.jpg 450w,
+                            ./images/project8@tablet.jpg 354w, 
+                            ./images/project8@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project8.jpg"
+                            alt="Маркетинг проэкт Проект LAB"
+                        />
+                        
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -194,7 +258,15 @@
                 <li class="work-list__item">
                     <div class="work-list__thumb">
 
-                        <img srcset="./images/project9.jpg 1x, ./images/project9@2x.jpg 2x" src="./images/project9.jpg" alt="Приложение Growing Business photo" width="370">
+                        <img
+                            srcset="./images/project9@mobile.jpg 450w,
+                            ./images/project9@tablet.jpg 354w, 
+                            ./images/project9@desktop.jpg 370w"
+                            sizes="(min-width: 1200px)  370px, (min-width: 768px) 354px, (min-width: 230px) 450px, 100vw"
+                            src="./images/project9.jpg"
+                            alt="Приложение Growing Business photo"
+                        />
+                        
                         <p class="work-thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
