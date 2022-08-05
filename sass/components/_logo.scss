@@ -6,6 +6,7 @@
     line-height: 1.2;
     letter-spacing: .03em; 
     text-decoration: none;
+    
     @media (min-width:1200px) {
         margin-right: 93px;
     }
@@ -16,6 +17,9 @@
         @media (min-width:1200px) {
             margin-right: 0;
         }
+    }
+    &--black{
+        padding: 16px 0;
     }
 }
 

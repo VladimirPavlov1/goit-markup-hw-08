@@ -1,9 +1,9 @@
 .hero{
    text-align: center; 
    background-color: var(--hero-section-color);
-   @media(max-width: 1199px){
-      margin-bottom: 30px;
-      padding: 118px 0;}
+   padding: 118px 0;
+   @media(max-width: 767px){
+      margin-bottom: 30px;}
    @media(min-width: 1200px){
       padding: 200px 0;}
 }

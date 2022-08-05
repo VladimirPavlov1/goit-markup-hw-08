@@ -15,6 +15,9 @@
 }
 .benefits-inner{
    padding: 30px 0;
+   @media(min-width:768px){
+      padding:0;
+   }
    text-align: center;
    &:last-child{
       margin-bottom: 0;
