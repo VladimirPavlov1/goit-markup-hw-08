@@ -21,6 +21,9 @@
 @media (min-width:768px) {
     .site-nav__item{
     margin-right: 50px;
+    &:last-child{
+        margin-right: 84px;
+    }
    
     }
 }

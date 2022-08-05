@@ -31,10 +31,10 @@
                 0px 1px 1px rgba(0, 0, 0, 0.14),
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child){
+ 
     @media (max-width:767px){
-        margin: 15px;
-    }}
+        margin: 15px 0;
+    }
     
     @media (min-width:768px) {
         width: 354px;

@@ -14,16 +14,23 @@
    justify-content: space-between;}}
 }
 .benefits-inner{
+   padding: 30px 0;
+   text-align: center;
+   &:last-child{
+      margin-bottom: 0;
+   }
+}
 
 .benefits-inner__title{
    color: var( --title-text-color);
    margin-top: 0;
    margin-bottom: 10px;
+  
    
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
-   text-align: start;
+   text-align:center;
    letter-spacing: 0.03em;
    text-transform: uppercase;
 }
@@ -33,7 +40,7 @@
    letter-spacing: .03em;
    margin-top: 0;
    margin-bottom: 0px;
-   padding-top: 0px;}
+   padding-top: 0px;
 }
  
 .benefits__icon{
@@ -56,7 +63,7 @@
    background-position: center;
 
    background-color:#F5F4FA;}
-       
+     
  }
  .benefits__icon-antenna::before{
     background-image: url('../images/logo-1.svg');

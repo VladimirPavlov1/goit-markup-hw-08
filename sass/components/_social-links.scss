@@ -1,5 +1,5 @@
 .social-links{
-    padding: 0 32px 30px;
+    padding: 0 32px 24px;
  }
  .social-links__list{
     display: flex;
@@ -54,13 +54,16 @@
  }
  .social-text-links{
     display: flex;
-    padding: 48px;
+    padding: 48px 0;
     @media (min-width:768px) {
        display: none;
     }
  }
  .social-text-links__item{
     margin-right: 20px;
+    &:first-child{
+       margin-left: 40px;
+    }
  }
  .social-text-links__link{
   
