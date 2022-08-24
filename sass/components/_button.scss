@@ -1,12 +1,7 @@
 .button-menu{
-    @media (min-width:767px) {
+    @media (min-width:768px) {
         display: none;
     }
-    display: block;
-    position: absolute;
-    z-index: 10000;
-    top:10 px;
-    right: 10px;
     width: 40px;
     height: 40px;
     border: none;
@@ -15,19 +10,25 @@
     &:hover, &:focus{
         fill: var(--accent-color);
     }
-    &.is-open .button__icon-cross{
-        display: block;
-       
-    }
-    &.is-open .button__icon-menu{
+    
+}
+.js-close-menu{
+    @media (min-width:768px) {
         display: none;
     }
-
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0 10px;
+    background-color: #fff;
+    &:hover, &:focus{
+        fill: var(--accent-color);
+    }
 }
 
-.button__icon-cross{
-    display: none;
-}
 .button{
     display: block;
     padding: 6px 22px;

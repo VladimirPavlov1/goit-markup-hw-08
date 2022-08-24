@@ -58,19 +58,25 @@
  .social-text-links{
     display: flex;
     padding: 48px 0;
+    background-color: var(--button-text-color);
     @media (min-width:768px) {
        display: none;
     }
  }
+ 
  .social-text-links__item{
-    margin-right: 20px;
+   @media (max-width:479px) {
+      margin-right: 5px;} 
+   margin-right: 20px;
     &:first-child{
-       margin-left: 40px;
+       padding-left: 40px;
     }
  }
  .social-text-links__link{
   
-   
+   @media (max-width:479px) {
+      font-size: 1rem;
+   }
    font-family:var(--main-font);
    font-style: normal;
    font-weight: 500;
