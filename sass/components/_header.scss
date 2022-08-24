@@ -4,7 +4,6 @@
 }
 .header__inner{
     padding:16px 0;
-    position: relative;
 }
 .header__inner-menu{
     @media (max-width:767px) {
@@ -18,21 +17,4 @@
     }
 }
 
-.js-menu-container{
-    display: block;
-   
-    position:fixed;
-    top: 0;
-    left: 0;
-    transform: translateX(100%);
-    z-index: 1000;
-   
-    width: 100vw;
-    height: 100vh;
-    
-    background-color: #fff;
-    &.is-open{
-       transform: translateX(0);
-    }
-    
-}
+

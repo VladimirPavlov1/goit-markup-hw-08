@@ -56,7 +56,7 @@
     
  }
  .social-text-links{
-    display: flex;
+   
     padding: 48px 0;
     background-color: var(--button-text-color);
     @media (min-width:768px) {
@@ -66,11 +66,8 @@
  
  .social-text-links__item{
    @media (max-width:479px) {
-      margin-right: 5px;} 
-   margin-right: 20px;
-    &:first-child{
-       padding-left: 40px;
-    }
+   margin-right: 5px;} 
+  
  }
  .social-text-links__link{
   

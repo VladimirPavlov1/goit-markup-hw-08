@@ -12,22 +12,7 @@
     }
     
 }
-.js-close-menu{
-    @media (min-width:768px) {
-        display: none;
-    }
-    display: block;
-    margin-left: auto;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    padding: 0 10px;
-    background-color: #fff;
-    &:hover, &:focus{
-        fill: var(--accent-color);
-    }
-}
+
 
 .button{
     display: block;
