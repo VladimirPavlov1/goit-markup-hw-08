@@ -2,12 +2,10 @@
    display: flex;
    flex-wrap:wrap;
    justify-content: center;
-   margin: -15px;
-    @media (min-width:768px) {
-        justify-content: start;
-    }
+   margin: 0px;
+    
     @media (min-width:1200px) {
-       justify-content: center;
+      margin: -15px;
        
     }
  }
@@ -23,9 +21,15 @@
       width:354px;
        margin: 15px;
       }
-    @media(min-width:1200px){
-         width:370px;
-      } 
+    @media(min-width: 1200px){
+      width: 370px;
+      &:nth-child(3n+3){
+         margin-right: 0;
+      }
+      &:nth-child(3n+1){
+         margin-right: 0;
+      }
+    }
     
     &:hover,
     &:focus{

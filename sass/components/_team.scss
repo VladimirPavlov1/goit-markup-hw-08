@@ -13,6 +13,9 @@
         margin: -15px;
 
     }
+    @media(min-width:1200px){
+        flex-wrap: nowrap;
+    }
  }
  .team__title{
    color: var(--title-text-color);

@@ -25,6 +25,7 @@
      @media (min-width:768px){
         margin-bottom: 0;
      }
+
  }
  .our-clients__list{
     display: flex;
@@ -40,6 +41,9 @@
     }
     @media(min-width:768px){
        margin-bottom: 0;
+    }
+    @media(min-width:1200px){
+      flex-wrap: nowrap;
     }
  }
  
